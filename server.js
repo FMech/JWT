@@ -41,7 +41,7 @@ function createToken(req,res,next){
 }
 
 app.post('/login',createToken,(req,res)=>{});
-
-app.listen(5000, () => {
+const PORT = process.env.PORT
+app.listen(PORT, () => {
     console.log("the server is working")
 });
